@@ -2,7 +2,8 @@ name: continuous integration & continuous deployment to GitHub Pages
 on:
   push:
     branches:
-      - solution
+      - master
+
 jobs:
   ci:
     runs-on: ubuntu-latest
@@ -19,8 +20,8 @@ jobs:
         run: npm run check
       - name: build
         run: npm run build
-      - run: git config user.name "Chuntong Gao"
-      - run: git config user.email "heihegao@gmail.com"
+      - run: git config user.name "Xitao Zhu"
+      - run: git config user.email "xitaozhu1106@gmail.com"
       - run: git checkout -b temporary-branch
       - run: git add .
       - run: git commit -m "automatic deployment"
