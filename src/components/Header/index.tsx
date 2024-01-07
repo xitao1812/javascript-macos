@@ -59,18 +59,6 @@ const Header: React.FC = () => {
             </div>
             <div className="HeaderRight">
                 <a
-                    href=""
-                    rel="noopener noreferrer"
-                    target="_blank"
-                >
-                    <Icon
-                        type="icon-ren"
-                        style={{
-                            fontSize: 22,
-                        }}
-                    />
-                </a>
-                <a
                     href="https://github.com/xitao1812"
                     rel="noopener noreferrer"
                     target="_blank"

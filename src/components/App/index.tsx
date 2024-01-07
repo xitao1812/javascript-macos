@@ -8,7 +8,7 @@ import Main from '../Main';
 
 const App: React.FC = (): JSX.Element => (
     <div className="App">
-        <Header/>
+        <Header />
         <Main />
         <Dock />
     </div>
