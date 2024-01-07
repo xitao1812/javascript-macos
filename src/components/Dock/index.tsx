@@ -17,10 +17,7 @@ import FinderIcon from '../../assets/images/Finder.png';
 import LaunchpadIcon from '../../assets/images/Launchpad.png';
 import PreferencesIcon from '../../assets/images/Preferences.png';
 import TerminalIcon from '../../assets/images/Terminal.png';
-import { Calculator } from '../Calculator';
-import Drawing from '../Drawing';
-import { Launchpad } from '../Launchpad';
-import Preferences from '../Preferences';
+//import Preferences from '../Preferences';
 import { AppState, DockConfig, DockPosition } from './types';
 /// <reference path="image.d.ts" />
 
@@ -296,22 +293,6 @@ const Dock: React.FC = () => {
 
     return (
         <React.Fragment>
-            <Preferences
-                dockConfig={dockConfig}
-                setDockConfig={setDockConfig}
-                preferencesState={preferencesState}
-                setPreferencesState={setPreferencesState}
-            />
-            <Calculator
-                calculatorState={calculatorState}
-                setCalculatorState={setCalculatorState}
-            />
-            <Drawing drawingState={drawingState} setDrawingState={setDrawingState} />
-            <Launchpad
-                showLaunchpad={showLaunchpad}
-                setShowLaunchPad={setShowLaunchPad}
-                handleDockIconClick={handleDockIconClick}
-            />
             <footer className={dockConfig.position} id="AppFooter">
                 <div
                     id="Docker"
